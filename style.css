@@ -59,8 +59,24 @@ body {
 }
 
 .goal-form__button {
-    width: 2rem;
+    background-color: var(--clr-background);
+    border-color: var(--clr-border);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color: var(--clr-text);
+    font-weight: 700;
+
+    cursor: pointer;
 }
+
+.goal-form__button:hover {
+    background-color: var(--clr-border);
+    border-color: var(--clr-border);
+    color: var(--clr-background);
+}
+
+
 
 .word-count {
     color: var(--clr-text);
@@ -68,10 +84,6 @@ body {
     margin: 1rem 0;
     font-weight: 700;
 }
-
-/*.current-count {*/
-/*    color: var(--clr-low-count);*/
-/*}*/
 
 .text-box {
     width: 100%;
