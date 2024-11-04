@@ -1,0 +1,6 @@
+see what changing progress count to progress from red through green looks like
+
+finish button styling
+
+add settings/theming
+
