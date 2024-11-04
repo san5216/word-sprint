@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Word Sprint</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+<header>
+  <h1 class="title">Daily Writing Goal</h1>
+</header>
+<main>
+  <form action="" id="goalInput" class="goal-form">
+    <label for="goalFormInput" class="goal-form__label">Set your writing goal</label>
+    <input type="text" name="goal" id="goalFormInput" class="goal-form__input" min="1" inputmode="numeric" pattern="[0-9]+" required
+           autofocus>
+    <button type="submit" class="goal-form__button">Set Goal</button>
+  </form>
+  <div id="textContainer" class="container">
+    <p id="totalWordCount" class="word-count">
+      <span id="countText" class="current-count">0</span>
+      /
+      <span id="goalCount" class="goal-count"></span>
+    </p>
+    <label for="textBox"></label>
+    <textarea id="textBox" class="text-box" placeholder="Start writing here..." autofocus></textarea>
+  </div>
+</main>
+</body>
+</html>
